@@ -1,10 +1,48 @@
+# Environment
 .env
 .env.*
 !.env.example
+
+# Build artifacts
 target/
 build/
+*.jar
+*.war
+*.ear
 .gradle/
+.mvn/wrapper/maven-wrapper.jar
+mvnw.cmd
+
+# IDE
 .idea/
 .vscode/
 *.iml
+*.iws
+*.ipr
+
+# Logs
 *.log
+*.log.*
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Secrets / keys
+*.pem
+*.key
+*.p12
+*.jks
+id_rsa*
+*.ppk
+
+# Test / coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+jacoco/
